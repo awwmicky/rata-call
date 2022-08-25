@@ -1,8 +1,22 @@
 # RATA - (RESTful API Tool App)
 
+[portfolio-link]: https://rebrand.ly/michael-f-alvarez__portfolio
+[portfolio-badge]: https://img.shields.io/website-up-down-sucess-important/https/aww-micky.web.app/?style=for-the-badge
 <div align="center">
 	<img alt="logo" width="150em" src="./public/favicon.png" />
 	<h2><code>The Developer Experience (DX)</code></h2>
+</div>
+
+<div align="center">
+	<a
+	title="Open web app 🔗"
+	target="_blank"
+	href="https://the-rata-devtool-app.netlify.app/"
+	><img
+		alt="web-app-build-status"
+		src="https://img.shields.io/website-up-down-sucess-important/https/the-rata-devtool-app.netlify.app/?style=for-the-badge"
+		/>
+	</a>
 </div>
 
 ```
@@ -418,10 +432,19 @@ Success Criteria
 <a target="_blank" href="https://github.com/">
 <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-100000?logoColor=FFF&logo=github-actions" />
 </a>
-<a target="_blank" href="https://figma.com/">
+<a target="_blank" href="https://figma.com/figjam/">
 <img alt="Figma Jam" src="https://img.shields.io/badge/Figma_Jam-F24E1E.svg?logoColor=FFF&logo=figma" />
+</a>
+<a target="_blank" href="https://www.netlify.com/">
+<img alt="netlify" src="https://img.shields.io/badge/Netlify-F24E1E.svg?logoColor=FFF&logo=netflify" />
 </a>
 </td>
 </tr>
 </table>
 <!-- AddThis -->
+
+<!--
+add
+- website up/down badge
+- build size badge
+-->
