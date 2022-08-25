@@ -3,29 +3,38 @@ name: Action 🎲
 on:
   push:
     branches:
-    - main
-    - develop
+      - main
+      - develop
 
 jobs:
   Action:
     name: Action 🎲
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+
     steps:
       - name: Start
         run: echo ""
+      - run: node -v # check by default
       - name: ⚪ Checkout repo
         uses: actions/checkout@master
-      - name: 🟢 Setup node
+      - name: 🟢 Setup node ${{ matrix.node-version }}
         uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: time yarn install
-      - name: Check Code
-        run: yarn check:quality
+        # run: time yarn install --frozen-lockfile # cache installs
+      - name: Continue
+        run: |
+          yarn check-all
+          yarn test
+          yarn build --if-present
       - name: Finish
         run: echo "done"
 
-      # - run: |
-      #     yarn install
-      #     yarn build --if-present
-      # - name: Finish 🏁 (2)
-      #   run: echo "done"
+# how to use pnpm in gh actions
+# how to cashe using package lock-file for CI

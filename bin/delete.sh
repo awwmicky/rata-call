@@ -29,4 +29,4 @@ done;
 
 read -p "Finished! Press Enter to exit: " x;
 
-exit 1;
+exit 0;

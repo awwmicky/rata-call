@@ -26,6 +26,15 @@
 	</a>
 	<a
 	target="_blank"
+	title="Open build 🔗"
+	href="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml"
+	><img
+		alt="netlify-build-status"
+		src="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml/badge.svg"
+		/>
+	</a>
+	<a
+	target="_blank"
 	href="https://api.github.com/repos/Arcane-404/rata-devtool"
 	><img
 		alt="repo-size"
@@ -43,6 +52,8 @@ who is it for? :: developers who wants a better API review process
 ```
 
 ## Project Scope
+
+Mid-Size Project
 
 Contributors : solo
 
