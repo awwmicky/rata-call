@@ -2,7 +2,7 @@
 
 <div align="center">
 	<img alt="logo" width="150em" src="./public/favicon.png" />
-	<h2><kbd>The Developer Experience (DX)</kbd></h2>
+	<h2><code>The Developer Experience (DX)</code></h2>
 </div>
 
 ```
