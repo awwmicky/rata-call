@@ -2,8 +2,9 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tsConfigPaths from 'vite-tsconfig-paths'
+import htmlPlugin from 'vite-plugin-html-config'
+import { htmlPluginOptions } from './config'
 
-// htmlPlugin(htmlPluginOptions),
 // eslintPlugin({ cache: false, }),
 
 // https://vitejs.dev/config/
@@ -25,7 +26,8 @@ export default defineConfig({
 		}],
   },
   plugins: [
-    react(),
+		react(),
     tsConfigPaths(),
+		htmlPlugin(htmlPluginOptions),
   ],
 })
