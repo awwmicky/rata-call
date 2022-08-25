@@ -426,7 +426,7 @@ Success Criteria
 </tr>
 
 <tr>
-<td><b>Utilies</b></td>
+<td><b>Utilities</b></td>
 <!-- VS Code, Git, GitHub, GitHub Actions, Figma Jam -->
 <td>
 <a target="_blank" href="https://code.visualstudio.com/">
@@ -451,9 +451,3 @@ Success Criteria
 </tr>
 </table>
 <!-- AddThis -->
-
-<!--
-add
-- website up/down badge
-- build size badge
--->
