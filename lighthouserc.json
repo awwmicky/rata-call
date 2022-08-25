@@ -4,7 +4,7 @@
       "target": "temporary-public-storage"
     },
     "assert": {
-      "preset": "lighthoue:recommended",
+      "preset": "lighthouse:recommended",
       "assertions": {
         "csp-xss": "off"
       }
