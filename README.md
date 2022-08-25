@@ -9,12 +9,21 @@
 
 <div align="center">
 	<a
-	title="Open web app 🔗"
 	target="_blank"
+	title="Open web app 🔗"
 	href="https://the-rata-devtool-app.netlify.app/"
 	><img
 		alt="web-app-build-status"
 		src="https://img.shields.io/website-up-down-sucess-important/https/the-rata-devtool-app.netlify.app/?style=for-the-badge"
+		/>
+	</a>
+	<a
+	target="_blank"
+	title="Open Netlify deploy 🔗"
+	href="https://app.netlify.com/sites/the-rata-devtool-app/deploys"
+	><img
+		alt="netlify-build-status"
+		src="https://api.netlify.com/api/v1/badges/9bb7901f-5203-45a0-a9bd-48f520991937/deploy-status"
 		/>
 	</a>
 </div>
@@ -424,7 +433,7 @@ Success Criteria
 <img alt="VS Code" src="https://img.shields.io/badge/VS_Code-0078D4?logoColor=FFF&logo=visual-studio-code" />
 </a>
 <a target="_blank" href="https://git-scm.com/">
-<img alt="Git" src="https://img.shields.io/badge/Git-F05033.svg?logoColor=FFF&logo=git" />
+<img alt="Git" src="https://img.shields.io/badge/Git-F05033?logoColor=FFF&logo=git" />
 </a>
 <a target="_blank" href="https://github.com/">
 <img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?logoColor=FFF&logo=github" />
@@ -433,10 +442,10 @@ Success Criteria
 <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-100000?logoColor=FFF&logo=github-actions" />
 </a>
 <a target="_blank" href="https://figma.com/figjam/">
-<img alt="Figma Jam" src="https://img.shields.io/badge/Figma_Jam-F24E1E.svg?logoColor=FFF&logo=figma" />
+<img alt="Figma Jam" src="https://img.shields.io/badge/Figma_Jam-F24E1E?logoColor=FFF&logo=figma" />
 </a>
 <a target="_blank" href="https://www.netlify.com/">
-<img alt="netlify" src="https://img.shields.io/badge/Netlify-F24E1E.svg?logoColor=FFF&logo=netflify" />
+<img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?logoColor=FFF&logo=netlify" />
 </a>
 </td>
 </tr>
