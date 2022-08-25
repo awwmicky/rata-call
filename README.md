@@ -30,7 +30,7 @@
 	href="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml"
 	><img
 		alt="github-actions"
-		src="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml/badge.svg?branch=main"
+		src="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml/badge.svg"
 		/>
 	</a>
 	<a
