@@ -12,7 +12,7 @@
 	href="https://the-rata-devtool-app.netlify.app/"
 	><img
 		alt="web-app-build-status"
-		src="https://img.shields.io/website-up-down-sucess-important/https/the-rata-devtool-app.netlify.app/"
+		src="https://img.shields.io/website-live-issue-sucess-important/https/the-rata-devtool-app.netlify.app/"
 		/>
 	</a>
 	<a
