@@ -1,9 +1,9 @@
 # RATA - (RESTful API Tool App)
 
-<pre class="subheading">
-	<img alt="logo" width="50" height="50" src="./public/favicon.png" />
-	<kbd>The Developer Experience (DX)</kbd>
-</pre>
+<div align="center">
+	<img alt="logo" width="150em" src="./public/favicon.png" />
+	<h2><kbd>The Developer Experience (DX)</kbd></h2>
+</div>
 
 ```
 TL;DR
@@ -314,28 +314,28 @@ Success Criteria
 <!-- Vite, TypeScript, React, Mantine UI, Zustand, React Query, React Hook Form, React Router -->
 <td>
 <a target="_blank" href="https://vitejs.dev/">
-<img alt="Vite" src="https://img.shields.io/badge/Vite-B73BFE?logoColor=FFD62E&style=flat-square&logo=vite" />
+<img alt="Vite" src="https://img.shields.io/badge/Vite-B73BFE?logoColor=FFD62E&style=for-the-badge&logo=vite" />
 </a>
 <a target="_blank" href="https://www.typescriptlang.org/">
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logoColor=FFFFFF&style=flat-square&logo=typescript" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logoColor=FFFFFF&style=for-the-badge&logo=typescript" />
 </a>
 <a target="_blank" href="https://reactjs.org/">
-<img alt="React" src="https://img.shields.io/badge/React-00D8FF?logoColor=20232A&style=flat-square&logo=react" />
+<img alt="React" src="https://img.shields.io/badge/React-00D8FF?logoColor=20232A&style=for-the-badge&logo=react" />
 </a>
 <a target="_blank" href="https://ui.mantine.dev/">
-<img alt="Mantine UI" src="https://img.shields.io/badge/Mantine_UI-339AF0?logoColor=FFFFFF&style=flat-square&logo=addthis" />
+<img alt="Mantine UI" src="https://img.shields.io/badge/Mantine_UI-339AF0?logoColor=FFFFFF&style=for-the-badge&logo=addthis" />
 </a>
 <a target="_blank" href="https://react-query.tanstack.com/">
-<img alt="React Query" src="https://img.shields.io/badge/React_Query-FF4154?logoColor=FFD94C&style=flat-square&logo=react-query" />
+<img alt="React Query" src="https://img.shields.io/badge/React_Query-FF4154?logoColor=FFD94C&style=for-the-badge&logo=react-query" />
 </a>
 <a target="_blank" href="https://react-hook-form.com/">
-<img alt="React Hook Form" src="https://img.shields.io/badge/React_Hook_Form-EC5990?logoColor=FFFFFF&style=flat-square&logo=react-hook-form" />
+<img alt="React Hook Form" src="https://img.shields.io/badge/React_Hook_Form-EC5990?logoColor=FFFFFF&style=for-the-badge&logo=react-hook-form" />
 </a>
 <a target="_blank" href="https://reactrouter.com/">
-<img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?logoColor=FFFFFF&style=flat-square&logo=react-router" />
+<img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?logoColor=FFFFFF&style=for-the-badge&logo=react-router" />
 </a>
 <a target="_blank" href="https://zustand-demo.pmnd.rs/">
-<img alt="Zustand" src="https://img.shields.io/badge/Zustand-716257?logoColor=FFFFFF&style=flat-square&logo=addthis" />
+<img alt="Zustand" src="https://img.shields.io/badge/Zustand-716257?logoColor=FFFFFF&style=for-the-badge&logo=addthis" />
 </a>
 </td>
 </tr>
@@ -425,12 +425,3 @@ Success Criteria
 </tr>
 </table>
 <!-- AddThis -->
-
-<style>
-.subheading {
-   gap: 0.5em;
-   display: flex;
-   font-weight:700;
-   font-size: 30px;
-}
-</style>
