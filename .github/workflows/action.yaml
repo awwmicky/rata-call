@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [14.x, 15.x, 16.x]
 
     steps:
       - name: Start
@@ -28,11 +28,12 @@ jobs:
       - name: Install Packages
         run: time yarn install
         # run: time yarn install --frozen-lockfile # cache installs
-      - name: Continue
-        run: |
-          yarn check-all
-          yarn test
-          yarn build --if-present
+      - name: 🔢 Run Code Standards
+        run: yarn check-all
+      - name: 🧪 Run Test
+        run: yarn test
+      - name: 📦 Run Build
+        run: yarn build
       - name: Finish
         run: echo "done"
 
