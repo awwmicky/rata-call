@@ -1,0 +1,8 @@
+{
+  "port": 6006,
+  "delay": 1000,
+  "watch": true,
+  "foreignKeySuffix": "_id",
+  "routes": "./server/routes.json",
+  "snapshots": "./server/snapshots/"
+}

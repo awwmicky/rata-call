@@ -1,0 +1,28 @@
+archive/
+temp/
+
+node_modules/
+package.json
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+.github/
+.vscode/
+.next/
+.husky/
+
+dist/
+build/
+public/
+coverage/
+
+# Ignore specific files:
+jsconfig.json
+tsconfig.json
+vite.config.ts
+vite.config.js
+
+# Ignore all JS files:
+# **/*.jsx
+# **/*.js

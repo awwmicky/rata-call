@@ -1,0 +1,51 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '[Husky] PRE-COMMIT';
+echo -e '🧮 Checking lint, format, type \n';
+
+# —— Check local staged/modified work ——
+npm run load:stage;
+
+# —— Check Prettier ——
+npm run check:format ||
+(
+  echo '🟠🟠 FORMAT FAILED - Your code format has an error 🟠🟠
+    Make the required changes listed above, add changes, and try commit again.
+    [options] :: "npm run check:format" or "npm run apply:format"
+  ';
+  false;
+);
+
+# —— Check ESLint ——
+npm run check:quality ||
+(
+  echo '🟣🟣 LINT FAILED - Your code quality has an error 🟣🟣
+    Make the required changes listed above, add changes, and try to commit again.
+    [options] :: "npm run check:quality" or "npm run apply:quality"
+  ';
+  false;
+);
+
+# —— Check Type ——
+npm run check:type ||
+(
+  echo '🔵🔵 TYPE FAILED - Your type definition has an error 🔵🔵
+    Make the required changes listed above, add changes, and try to commit again.
+    [options] :: "npm run check:type"
+  ';
+  false;
+);
+
+# —— Check Build ——
+# npm run build ||
+# (
+#   echo '🟤🟤 BUILD FAILED - Your build has an error 🟤🟤
+#     Build Release Failed... View the errors above to see why.
+#   ';
+#   false;
+# )
+# && npm run unbuild
+
+# If everything passes - Now it can publish
+echo '✅✅✅ (1) - PRE-COMMIT — Pass! Let us continue ✅✅✅';

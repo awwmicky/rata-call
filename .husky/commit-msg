@@ -1,0 +1,20 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '[Husky] COMMIT-MSG';
+echo -e '💬 Checking branch name, commit message \n';
+
+# —— Check Branch Name ——
+if [[ $(git rev-parse --abbrev-ref HEAD) = main ]]; then
+  echo '⚪⚪ BRANCH ABORTED — Do not commit on main branch ⚪⚪';
+  exit 1;
+fi;
+
+# —— Check Commit Message ——
+npm run load:cl -- $1 || (
+  echo '🔴🔴 COMMIT ABORTED — Your commit message is invalid. 🔴🔴';
+  exit 1;
+);
+
+# If everything passes... Now it can publish
+echo '✅✅✅ (2) - COMMIT-MSG — Pass! Let us finish ✅✅✅';

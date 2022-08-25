@@ -1,0 +1,255 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:editorconfig/noconflict",
+    "alloy/typescript",
+    "alloy/react",
+    "alloy"
+
+    /* === LAST === */
+    // "prettier"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "import",
+    "editorconfig"
+
+    /* === LAST === */
+    // "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": { "import/no-anonymous-default-export": "off" }
+    }
+  ],
+  "rules": {
+    // "prettier/prettier": 0,
+
+    /* === JAVASCRIPT === */
+    "no-var": "warn",
+    // "no-shadow": "warn",
+    // "max-len": ["warn", { "code": 160 }],
+    "semi": ["warn", "never"],
+    // "indent": ["warn", "tab"], // ???
+    // "comma-dangle": ["warn", "never"],
+    // "arrow-parens": ["warn", "as-needed", { "requireForBlockBody": true }],
+    // "arrow-body-style": ["warn", "as-needed"],
+    "space-infix-ops": 0,
+    "arrow-spacing": ["warn", { "before": true, "after": true }],
+    "keyword-spacing": ["warn", { "after": true }],
+    "key-spacing": ["warn", { "mode": "minimum" }],
+    "space-before-blocks": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "always"],
+    "space-before-function-paren": ["warn", "always"],
+    "template-tag-spacing": ["warn", "never"],
+    "template-curly-spacing": ["warn", "always"],
+    // "comma-spacing": ["warn", { "before": false, "after": true }]
+    // "computed-property-spacing": ["warn", "always"],
+    // "space-in-parens": ["warn", "always"],
+    // "no-unused-vars": ["warn", { "vars": "all" }],
+    "linebreak-style": 0,
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+
+    /* === REACT === */
+    "jsx-quotes": ["warn", "prefer-double"],
+    // "react/jsx-uses-react": "warn",
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-pascal-case": "warn",
+    "react/jsx-first-prop-new-line": ["warn", "multiline"],
+    // "react/jsx-max-props-per-line": ["warn", { "maximum": 3 }],
+    "react/jsx-closing-bracket-location": ["warn", "tag-aligned"],
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+    "react/no-unescaped-entities": ["warn", { "forbid": ["<", ">", "{", "}"] }],
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/jsx-curly-spacing": [
+      "warn",
+      {
+        "when": "never",
+        // "children": { "when": "always" },
+        "attributes": { "when": "always" },
+        "spacing": { "objectLiterals": "never" }
+      }
+    ],
+    "react/jsx-curly-newline": [
+      "warn",
+      {
+        "multiline": "consistent",
+        "singleline": "consistent"
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "warn",
+      {
+        "arrow": "parens-new-line",
+        "logical": "parens-new-line",
+        "declaration": "parens-new-line",
+        "return": "parens-new-line"
+      }
+    ],
+    "react/jsx-key": 0,
+    "react/prop-types": 0,
+    "react/jsx-uses-react": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-boolean-value": 0,
+    "react/require-default-props": 0,
+    "react/no-children-prop": 0,
+    // "react/no-unused-prop-styles": "warn"
+    // "react/deconstructing-assignment": "warn"
+
+    /* === REACT-HOOKS === */
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+
+    /* === REACT-ACCESSIBILITY === */
+    "jsx-a11y/accessible-emoji": 0,
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+
+    /* === IMPORT & EXPORT === */
+    "import/named": 0,
+    "import/extensions": 0,
+    // "import/no-namespace": 0,
+    "import/no-unresolved": 0,
+    // "import/no-relative-parent-imports": "error",
+    "import/no-anonymous-default-export": "error",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          ["parent", "sibling"],
+          "index",
+          "type"
+          //
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/**/*",
+            "group": "internal"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroupsExcludedImportTypes": ["react"],
+        "warnOnUnassignedImports": true,
+        "newlines-between": "never"
+      }
+    ],
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+
+    /* === TYPESCRIPT === */
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    // "@typescript-eslint/no-use-before-define": 0,
+    // "@typescript-eslint/explicit-function-return-type": 0,
+    "no-shadow": 0,
+    "@typescript-eslint/no-shadow": "error",
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+
+    /* === WIDTH === */
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreTemplateLiterals": true,
+        "ignorePattern": "^import [^,]+ from |^export | ^return | `.{30,}`"
+      }
+    ]
+
+    /* === ALT === */
+    // "react/jsx-indent-props": ["warn", 2]
+  }
+}
