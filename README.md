@@ -26,11 +26,11 @@
 	</a>
 	<a
 	target="_blank"
-	title="Open build 🔗"
+	title="Open actions 🔗"
 	href="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml"
 	><img
-		alt="netlify-build-status"
-		src="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml/badge.svg"
+		alt="github-actions"
+		src="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml/badge.svg?branch=main"
 		/>
 	</a>
 	<a
