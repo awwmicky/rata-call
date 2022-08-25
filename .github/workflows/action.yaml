@@ -17,8 +17,7 @@ jobs:
 
     steps:
       - name: Start
-        run: echo ""
-      - run: node -v # check by default
+        run: echo "continue"
       - name: ⚪ Checkout repo
         uses: actions/checkout@master
       - name: 🟢 Setup node ${{ matrix.node-version }}
@@ -34,6 +33,8 @@ jobs:
         run: yarn test
       - name: 📦 Run Build
         run: yarn build
+      - name: 📏 Run Benchmarks
+        run: yarn load:lighthouse
       - name: Finish
         run: echo "done"
 

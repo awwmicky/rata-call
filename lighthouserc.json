@@ -1,0 +1,13 @@
+{
+  "ci": {
+    "upload": {
+      "target": "temporary-public-storage"
+    },
+    "assert": {
+      "preset": "lighthoue:recommended",
+      "assertions": {
+        "csp-xss": "off"
+      }
+    }
+  }
+}
