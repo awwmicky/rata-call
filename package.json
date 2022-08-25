@@ -20,7 +20,7 @@
     "load:cl": "commitlint --edit",
     "load:stage": "lint-staged",
     "load:husky": "husky install",
-    "load:lighthoue": "lhci autorun",
+    "load:lighthouse": "lhci autorun",
     "check-all": "npm-run-all check:format check:quality check:type",
     "check:format": "prettier --check \"./src/**/*.{json,(js|ts)}\"",
     "check:quality": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
