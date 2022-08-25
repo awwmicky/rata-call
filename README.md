@@ -442,6 +442,12 @@ Success Criteria
 <a target="_blank" href="https://commitlint.js.org/#/">
 <img alt="Commitlint" src="https://img.shields.io/badge/Commitlint-121212?logoColor=FFFFFF&logo=commitlint" />
 </a>
+<a target="_blank" href="https://web.dev/measure/">
+<img alt="Lighthouse" src="https://img.shields.io/badge/Lighthouse-F44B21?logoColor=FFF&logo=lighthouse" />
+</a>
+<a target="_blank" href="https://github.com/features/actions">
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2671E5?logoColor=FFF&logo=github-actions" />
+</a>
 </td>
 </tr>
 
@@ -457,9 +463,6 @@ Success Criteria
 </a>
 <a target="_blank" href="https://github.com/">
 <img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?logoColor=FFF&logo=github" />
-</a>
-<a target="_blank" href="https://github.com/">
-<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-100000?logoColor=FFF&logo=github-actions" />
 </a>
 <a target="_blank" href="https://figma.com/figjam/">
 <img alt="Figma Jam" src="https://img.shields.io/badge/Figma_Jam-F24E1E?logoColor=FFF&logo=figma" />

@@ -33,8 +33,9 @@ jobs:
         run: yarn test
       - name: 📦 Run Build
         run: yarn build
-      - name: 📏 Run Benchmarks
-        run: yarn load:lighthouse
+      # use only for main branch
+      # - name: 📏 Run Benchmarks
+        # run: yarn load:lighthouse
       - name: Finish
         run: echo "done"
 
