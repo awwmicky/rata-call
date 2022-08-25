@@ -2,7 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 echo '[Husky] PRE-COMMIT';
-echo -e '🧮 Checking lint, format, type \n';
+echo -e '🧮 Checking quality, format, type \n';
 
 # —— Check local staged/modified work ——
 npm run load:stage;

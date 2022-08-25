@@ -1,7 +1,5 @@
 # RATA - (RESTful API Tool App)
 
-[portfolio-link]: https://rebrand.ly/michael-f-alvarez__portfolio
-[portfolio-badge]: https://img.shields.io/website-up-down-sucess-important/https/aww-micky.web.app/?style=for-the-badge
 <div align="center">
 	<img alt="logo" width="150em" src="./public/favicon.png" />
 	<h2><code>The Developer Experience (DX)</code></h2>
@@ -250,8 +248,9 @@ Success Criteria
 6. refine & polish the UI
 7. add metadata
 8. write the case study
-   <!-- add to resume, portfolio social profile -->
-   <!-- document as WIP content -->
+
+<!-- add to resume, portfolio social profile -->
+<!-- document as WIP content -->
 
 ### My Approach
 
@@ -329,6 +328,8 @@ Success Criteria
 
 <br /> <!--  -->
 
+<!-- ## View Demos -->
+
 ## Tools & Technologies
 
 <table>
@@ -399,7 +400,7 @@ Success Criteria
 
 <tr>
 <td><b>Environment</b></td>
-<!-- EditorConfig, ES Lint, Prettier, Husky, Lint Staged, Commitizen, Commitlint -->
+<!-- EditorConfig, ESLint, Prettier, Husky, Lint-Staged, Commitizen, Commitlint -->
 <td>
 <a target="_blank" href="https://editorconfig.org/">
 <img alt="EditorConfig" src="https://img.shields.io/badge/EditorConfig-E0EFEF?logoColor=000&logo=editorconfig" />
@@ -427,7 +428,7 @@ Success Criteria
 
 <tr>
 <td><b>Utilities</b></td>
-<!-- VS Code, Git, GitHub, GitHub Actions, Figma Jam -->
+<!-- VS Code, Git, GitHub, GitHub Actions, Figma Jam, Netlify -->
 <td>
 <a target="_blank" href="https://code.visualstudio.com/">
 <img alt="VS Code" src="https://img.shields.io/badge/VS_Code-0078D4?logoColor=FFF&logo=visual-studio-code" />
@@ -450,4 +451,3 @@ Success Criteria
 </td>
 </tr>
 </table>
-<!-- AddThis -->
