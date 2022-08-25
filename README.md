@@ -12,7 +12,7 @@
 	href="https://the-rata-devtool-app.netlify.app/"
 	><img
 		alt="web-app-build-status"
-		src="https://img.shields.io/website-up-down-sucess-important/https/the-rata-devtool-app.netlify.app/?style=for-the-badge"
+		src="https://img.shields.io/website-up-down-sucess-important/https/the-rata-devtool-app.netlify.app/"
 		/>
 	</a>
 	<a
@@ -22,6 +22,14 @@
 	><img
 		alt="netlify-build-status"
 		src="https://api.netlify.com/api/v1/badges/9bb7901f-5203-45a0-a9bd-48f520991937/deploy-status"
+		/>
+	</a>
+	<a
+	target="_blank"
+	href="https://api.github.com/repos/Arcane-404/rata-devtool"
+	><img
+		alt="repo-size"
+		src="https://img.shields.io/github/repo-size/Arcane-404/rata-devtool"
 		/>
 	</a>
 </div>

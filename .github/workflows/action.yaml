@@ -1,0 +1,31 @@
+name: Action 🎲
+
+on:
+  push:
+    branches:
+    - main
+    - develop
+
+jobs:
+  Action:
+    name: Action 🎲
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start
+        run: echo ""
+      - name: ⚪ Checkout repo
+        uses: actions/checkout@master
+      - name: 🟢 Setup node
+        uses: actions/setup-node@master
+      - name: Install Packages
+        run: time yarn install
+      - name: Check Code
+        run: yarn check:quality
+      - name: Finish
+        run: echo "done"
+
+      # - run: |
+      #     yarn install
+      #     yarn build --if-present
+      # - name: Finish 🏁 (2)
+      #   run: echo "done"
