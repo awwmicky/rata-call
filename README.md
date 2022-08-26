@@ -12,13 +12,13 @@
 	href="https://the-rata-devtool-app.netlify.app/"
 	><img
 		alt="web-app-build-status"
-		src="https://img.shields.io/website-live-issue-sucess-important/https/the-rata-devtool-app.netlify.app/"
+		src="https://img.shields.io/website-live-issue-sucess-important/https/the-rata-app.netlify.app/"
 		/>
 	</a>
 	<a
 	target="_blank"
 	title="Open Netlify deploy 🔗"
-	href="https://app.netlify.com/sites/the-rata-devtool-app/deploys"
+	href="https://app.netlify.com/sites/the-rata-app/deploys"
 	><img
 		alt="netlify-build-status"
 		src="https://api.netlify.com/api/v1/badges/9bb7901f-5203-45a0-a9bd-48f520991937/deploy-status"
@@ -27,18 +27,18 @@
 	<a
 	target="_blank"
 	title="Open actions 🔗"
-	href="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml"
+	href="https://github.com/Arcane-404/rata/actions/workflows/action.yaml"
 	><img
 		alt="github-actions"
-		src="https://github.com/Arcane-404/rata-devtool/actions/workflows/action.yaml/badge.svg"
+		src="https://github.com/Arcane-404/rata/actions/workflows/action.yaml/badge.svg"
 		/>
 	</a>
 	<a
 	target="_blank"
-	href="https://api.github.com/repos/Arcane-404/rata-devtool"
+	href="https://api.github.com/repos/Arcane-404/rata"
 	><img
 		alt="repo-size"
-		src="https://img.shields.io/github/repo-size/Arcane-404/rata-devtool"
+		src="https://img.shields.io/github/repo-size/Arcane-404/rata"
 		/>
 	</a>
 </div>
