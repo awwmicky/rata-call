@@ -22,7 +22,11 @@ interface IQueryData {
 		method: string
 		query?: any // FIXME:
 		// { [key: string]: any }
+		// params?: any // FIXME:
+		// { [key: string]: any }
 		body?: any // FIXME:
+		// { [key: string]: any }
+		headers?: any // FIXME:
 		// { [key: string]: any }
 	}]
 }
@@ -44,16 +48,16 @@ const convertObjToArr = (data: any) => {
 }
 
 export const requestData = async ({ queryKey }: IQueryData) => {
-	// console.info('[request]', queryKey) // TODO:
-	const { url, method, query: searchParams, body: json } = queryKey[0]
-	const requestOptions = { method, searchParams, json }
+	console.info('[request]', queryKey[0]) // TODO:
+	const { url, method, query: searchParams, body: json, headers } = queryKey[0]
+	const requestOptions = { method, searchParams, json, headers }
 	const startTime = new Date().getTime()
 
 	try {
 		const response: KyResponse = await ky(url, requestOptions)
 		const results = await response.json()
 
-		// console.info('[api result]', results) // TODO:
+		console.info('[api result]', results) // TODO:
 		return {
 			metadata: {
 				statusCode: response.status,

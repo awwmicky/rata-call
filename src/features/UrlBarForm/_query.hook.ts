@@ -28,7 +28,9 @@ const useQueryData = ({ select_method, url_endpoint }: IQueryProps) => {
 		url: url_endpoint,
 		method: select_method,
 		query: records.query,
+		// params: records.params,
 		body: records.body,
+		headers: records.headers,
 	} ], requestData, queryOptions)
 
 	const fetchData = () => queryData.refetch()

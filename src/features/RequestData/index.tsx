@@ -3,11 +3,13 @@ import { Badge, Card, Tabs, Title } from '@mantine/core'
 import { useGlobalStore } from '@/services'
 import { FormatOption } from './FormatOption'
 
+// TODO: chores: improve to scale
+
 const TABS_OPTIONS = {
 	query: { value: 'query', label: 'Query' },
 	// params: { value: 'params', label: 'Params' },
 	body: { value: 'body', label: 'Body' },
-	// headers: { value: 'headers', label: 'Headers' },
+	headers: { value: 'headers', label: 'Headers' },
 }
 
 const RequestData = () => {
@@ -16,11 +18,7 @@ const RequestData = () => {
 
 	const queryCount = (records.query) && Object.entries(records.query).length
 	const bodyCount = (records.body) && Object.entries(records.body).length
-
-	/*
-	map tab list tab
-	map tab panel
-	*/
+	const headersCount = (records.headers) && Object.entries(records.headers).length
 
 	return (
     <Card shadow="sm" p="lg" radius="md" withBorder>
@@ -38,6 +36,11 @@ const RequestData = () => {
 						rightSection={ bodyCount && <Notification count={ bodyCount } /> }
 						children={ <b>{ TABS_OPTIONS.body.label }</b> }
 					/>
+					<Tabs.Tab
+						value={ TABS_OPTIONS.headers.value }
+						rightSection={ headersCount && <Notification count={ headersCount } /> }
+						children={ <b>{ TABS_OPTIONS.headers.label }</b> }
+					/>
 				</Tabs.List>
 
 				<Tabs.Panel value={ TABS_OPTIONS.query.value }>
@@ -50,6 +53,12 @@ const RequestData = () => {
 					<FormatOption
 						activeTab={ activeTab }
 						confirmTab={ activeTab === TABS_OPTIONS.body.value }
+					/>
+				</Tabs.Panel>
+				<Tabs.Panel value={ TABS_OPTIONS.headers.value }>
+					<FormatOption
+						activeTab={ activeTab }
+						confirmTab={ activeTab === TABS_OPTIONS.headers.value }
 					/>
 				</Tabs.Panel>
 			</Tabs>

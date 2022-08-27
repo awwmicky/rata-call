@@ -14,7 +14,7 @@ export const parseJsonEntry = (val: string) => {
 export const parseJsonFormat = (arr: { [key: string]: string }[]) => {
 	const regexNumbersOnly = /^\d+$/
 	const regexOperatorsOnly = /\b(true|false|null)\b/
-	const regexWordStringsOnly = /^[\w\s]+$/
+	const regexWordStringsOnly = /^[\w\s._\-\/]+$/
 
 	const result = arr.reduce((obj, item) => {
 		item.keys = item.keys.trim().toLowerCase()

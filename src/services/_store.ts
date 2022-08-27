@@ -24,7 +24,7 @@ interface IRecords {
 	query?: IObject
 	// params: undefined
 	body?: IObject
-	// headers: undefined
+	headers?: IObject
 }
 
 interface IState {
@@ -47,7 +47,7 @@ const useGlobalStore = create<TGlobalStore, TMiddleware>( devtools((set) => ({
 		query: undefined,
 		// params: undefined,
 		body: undefined,
-		// headers: undefined,
+		headers: undefined,
 	},
 
 	newResults (results) {
@@ -63,6 +63,9 @@ const useGlobalStore = create<TGlobalStore, TMiddleware>( devtools((set) => ({
 				break
 			case 'body':
 				set((state) => ({ ...state, records: { ...state.records, body: entry } }))
+				break
+			case 'headers':
+				set((state) => ({ ...state, records: { ...state.records, headers: entry } }))
 				break
 			default: set((state) => (state))
 		}

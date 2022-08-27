@@ -20,10 +20,15 @@ jobs:
         run: echo "continue"
       - name: ⚪ Checkout repo
         uses: actions/checkout@master
+      - name: 🟩 Setup PNPM
+        uses: pnpm/action-setup@master
+        with:
+          version: 7
       - name: 🟢 Setup node ${{ matrix.node-version }}
         uses: actions/setup-node@master
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Install Packages
         run: time yarn install
         # run: time yarn install --frozen-lockfile # cache installs
