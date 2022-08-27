@@ -32,22 +32,14 @@ jobs:
           cache-dependency-path: "pnpm-lock.yaml"
       - name: Install Packages
         run: time pnpm install
-        # run: time yarn install
-        # run: time yarn install --frozen-lockfile # cache installs
       - name: 🔢 Run Standards
         run: pnpm check-all
-        # run: yarn check-all
       - name: 🧪 Run Test
         run: pnpm test
-        # run: yarn test
       - name: 📦 Run Build
         run: pnpm build
-        # run: yarn build
       # use only for main branch
       # - name: 📏 Run Benchmarks
-        # run: yarn load:lighthouse
+        # run: pnpm load:lighthouse
       - name: Finish
         run: echo "done"
-
-# how to use pnpm in gh actions
-# how to cashe using package lock-file for CI
