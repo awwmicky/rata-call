@@ -28,16 +28,21 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: "pnpm"
+          cache-dependency-path: "pnpm-lock.yaml"
       - name: Install Packages
-        run: time yarn install
+        run: time pnpm install
+        # run: time yarn install
         # run: time yarn install --frozen-lockfile # cache installs
       - name: 🔢 Run Standards
-        run: yarn check-all
+        run: pnpm check-all
+        # run: yarn check-all
       - name: 🧪 Run Test
-        run: yarn test
+        run: pnpm test
+        # run: yarn test
       - name: 📦 Run Build
-        run: yarn build
+        run: pnpm build
+        # run: yarn build
       # use only for main branch
       # - name: 📏 Run Benchmarks
         # run: yarn load:lighthouse
