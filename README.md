@@ -2,7 +2,7 @@
 
 <div align="center">
 	<img alt="logo" width="150em" src="./public/favicon.png" />
-	<h2><code>The Developer Experience (DX)</code></h2>
+	<h2><code>A Conceptual Project</code></h2>
 </div>
 
 <div align="center">
