@@ -1,4 +1,4 @@
-import { FC, ReactNode, } from 'react'
+import { Children, FC, PropsWithChildren, ReactElement } from 'react'
 import { closestCenter, DndContext, DragEndEvent } from '@dnd-kit/core'
 import { restrictToParentElement } from '@dnd-kit/modifiers'
 import { SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
@@ -9,17 +9,19 @@ import { useStyles } from './_.styles'
 
 interface IEntryData {
 	id: string | number
-	[key: string]: any
+	keys: string
+	value: string
+	show: boolean
+	// [key: string]: any
 }
 
 interface IDragNDropProps {
-	children?: ReactNode
+	children?: (item: IEntryData, index: number) => ReactElement
 	items: IEntryData[]
 	reorder: UseFieldArrayMove
 }
 
-interface IDnDItemProps {
-	children?: ReactNode
+interface IDnDItemProps extends PropsWithChildren {
 	id: string | number
 }
 
@@ -37,12 +39,20 @@ const DragNDrop: FC<IDragNDropProps> = ({ children, items, reorder }) => {
 		<DndContext
 			onDragEnd={ handleDragEnd }
 			collisionDetection={ closestCenter }
-			modifiers={ [  restrictToParentElement ] }
+			modifiers={ [ restrictToParentElement ] }
 			children={ (
 				<SortableContext
 					items={ items.map(({ id }) => id) }
 					strategy={ verticalListSortingStrategy }
-					children={ <div className="dnd-kit">{ children }</div> }
+					children={ (
+						<div data-container="dnd-kit">
+							{ Children.toArray(items.map((item, index) => (
+								<DnDItem key={ item.id } id={ item.id }>
+									{ children?.(item, index) }
+								</DnDItem>
+							)))}
+						</div>
+					) }
 				/>
 			) }
 		/>
@@ -70,9 +80,9 @@ const DnDItem: FC<IDnDItemProps> = ({ children, id }) => {
 		<fieldset
 			{ ...attributes }
 			ref={ setNodeRef }
-			data-id={ `dnd-item-${ id }` }
 			style={{ transition, transform: drag3D, marginInline: 0 }}
 			className={ cx(classes.container, { [classes.dragContianer]: isDragging }) }
+			data-id={ `dnd-item-${ id }` }
 			draggable
 		>
 			{ children }
@@ -81,4 +91,4 @@ const DnDItem: FC<IDnDItemProps> = ({ children, id }) => {
 	)
 }
 
-export { DragNDrop, DnDItem }
+export { DragNDrop }

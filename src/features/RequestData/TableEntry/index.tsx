@@ -1,4 +1,4 @@
-import { Children, FC, KeyboardEvent, useEffect, useRef } from 'react'
+import { FC, KeyboardEvent, useEffect, useRef } from 'react'
 import { ActionIcon, Button, Group } from '@mantine/core'
 import { useWatch } from 'react-hook-form'
 import { Icon } from '@/components/core'
@@ -6,10 +6,10 @@ import { CheckboxField, TextField } from '@/components/shared'
 import { useGlobalStore } from '@/services'
 import { FormDataProvider } from '@/utils/context'
 import { parseJsonFormat } from '@/utils/helpers'
-import { DnDItem, DragNDrop } from '../../DragNDrop'
+import { DragNDrop } from '../../DragNDrop'
 
 interface IEntryData {
-	id: string
+	id: string | number
 	keys: string
 	value: string
 	show: boolean
@@ -57,21 +57,19 @@ const TableEntry: FC<ITableEntryProps> = ({
 		<div>
 			<FormDataProvider methods={ form.methods }>
 				<DragNDrop items={ fields } reorder={ form.move }>
-					{ Children.toArray(fields?.map((entry, idx) => (
-						<DnDItem key={ entry.id } id={ entry.id }>
-							<EntryItem
-								{ ...entry }
-								isDisabled={ !key_value[idx]?.show }
-								addNewEntry={ () => (fields.length - 1 === idx) && addNewEntry() }
-								removeEntry={ () => removeEntry(idx) }
-								name={{
-									key: `key_value.${ idx }.keys`,
-									value: `key_value.${ idx }.value`,
-									show: `key_value.${ idx }.show`,
-								}}
-							/>
-						</DnDItem>
-					)))}
+					{ (entry, index) => (
+						<EntryItem
+							{ ...entry }
+							isDisabled={ !key_value[index]?.show }
+							addNewEntry={ () => (fields.length - 1 === index) && addNewEntry() }
+							removeEntry={ () => removeEntry(index) }
+							name={{
+								key: `key_value.${ index }.keys`,
+								value: `key_value.${ index }.value`,
+								show: `key_value.${ index }.show`,
+							}}
+						/>
+					) }
 				</DragNDrop>
 
 				<Group>
