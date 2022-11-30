@@ -1,10 +1,10 @@
 const content = {
-	title: 'RATA | RESTful API Tool App',
-	description: 'The developer experience for tracking & reviewing API data. Help make API integration simple.',
+	title: 'RATA Call | Productivity App',
+	description: 'Make a call, record the data, and simplify the process of developing RESTful APIs',
 	keywords: 'vite, typescript, react, mantine ui, react query, react hook form, react router, zustand',
 	author: 'michael f alvarez, m-f-alvarez@outlook.com, 650-260-8682',
-	link: 'https://the-rata-devtool-app.netlify.app/',
-	link_name: 'the-rata-devtool-app.netlify.app',
+	link: 'https://rata-call-app.netlify.app/',
+	link_name: 'rata-call-app.netlify.app',
 	thumbnail: '/thumbnail.png',
 	img_alt: '🎈',
 }
@@ -55,8 +55,3 @@ export const htmlPluginOptions = {
 		},
 	],
 }
-
-// { name: '', content: '', },
-
-/* <link rel="canonical" href="https://www.example.com/" /> */
-/* <base href="https://www.example.com/" /> */
