@@ -1,24 +1,23 @@
-# RATA - (RESTful API Tool App)
-
 <div align="center">
-	<img alt="logo" width="150em" src="./public/favicon.png" />
-	<h2><code>A Conceptual Project</code></h2>
+	<h1>RATA Call - Productivity App</h1>
+	<img alt="logo" width="150" src="./public/favicon.png" />
+	<h2><code>Conceptual Project</code></h2>
 </div>
 
 <div align="center">
 	<a
 	target="_blank"
 	title="Open web app 🔗"
-	href="https://the-rata-devtool-app.netlify.app/"
+	href="https://rata-call-app.netlify.app/"
 	><img
-		alt="web-app-build-status"
-		src="https://img.shields.io/website-live-issue-sucess-important/https/the-rata-app.netlify.app/"
+		alt="build-status"
+		src="https://img.shields.io/website-live-issue-sucess-important/https/rata-call-app.netlify.app/"
 		/>
 	</a>
 	<a
 	target="_blank"
-	title="Open Netlify deploy 🔗"
-	href="https://app.netlify.com/sites/the-rata-app/deploys"
+	title="Open deploy status 🔗"
+	href="https://app.netlify.com/sites/rata-call-app/deploys"
 	><img
 		alt="netlify-build-status"
 		src="https://api.netlify.com/api/v1/badges/9bb7901f-5203-45a0-a9bd-48f520991937/deploy-status"
@@ -27,31 +26,43 @@
 	<a
 	target="_blank"
 	title="Open actions 🔗"
-	href="https://github.com/Arcane-404/rata/actions/workflows/action.yaml"
+	href="https://github.com/awwmicky/rata-call/actions/workflows/action.yaml"
 	><img
 		alt="github-actions"
-		src="https://github.com/Arcane-404/rata/actions/workflows/action.yaml/badge.svg"
+		src="https://github.com/awwmicky/rata-call/actions/workflows/action.yaml/badge.svg"
 		/>
 	</a>
 	<a
 	target="_blank"
-	href="https://api.github.com/repos/Arcane-404/rata"
+	href="https://api.github.com/repos/awwmicky/rata-call"
 	><img
 		alt="repo-size"
-		src="https://img.shields.io/github/repo-size/Arcane-404/rata"
+		src="https://img.shields.io/github/repo-size/awwmicky/rata-call"
 		/>
 	</a>
 </div>
 
 ```
-TL;DR
+𝚃𝙻;𝙳𝚁
 
-what is it?    :: a simplified API devtool
-why use it?    :: to track & test API results
-who is it for? :: developers who wants a better API review process
+what is it?    :: a data query caching app
+why use it?    :: to focus test-driven developement
+who is it for? :: engineers that want a simplified API recording process
 ```
 
-## Project Scope
+<hr />
+
+
+<div align="center">
+	<img
+	align="right"
+	width="33%"
+	alt="thumbnail"
+	src="./public/thumbnail.png"
+	/>
+</div>
+
+## Project Brief
 
 Mid-Size Project
 
@@ -59,28 +70,12 @@ Contributors : solo
 
 Timeframe : ~2 weeks
 
-Acceptance Criteria
-
-<!-- definition of done -->
-
-- is it mobile responsive?
-- can I send & retrieve data?
-- can I manage all input data?
-- can I copy inputs & outputs?
-
-Success Criteria
-
-<!-- goals & deliverables -->
-
-- keeping the code quality & format
-- keeping the direction MVP proof
-- having clear & intuitive functionality
+<br /> <!--  -->
 
 <details>
 <summary>
 <b>Summary | Goal | Results</b>
 </summary>
-<br />
 <!-- business objective :: client -->
 
 ### Summary
@@ -103,7 +98,6 @@ Success Criteria
 <summary>
 <b>Background | Challenge | Solution</b>
 </summary>
-<br />
 <!-- business story :: user -->
 
 ### Background
@@ -132,19 +126,18 @@ Success Criteria
 <summary>
 <b>Features & Benefits</b>
 </summary>
-<br />
 
-1. =
+1. [-]
 
    - feature :: track & record every sent request made
    - benefit :: you are able to review API quicker
 
-2. =
+2. [-]
 
    - feature :: format & copy request inputs as table/json
    - benefit :: maintain & choose input options you prefer
 
-3. =
+3. [-]
 
    - feature :: view & copy response outputs
    - benefit :: able to share results with others
@@ -157,7 +150,6 @@ Success Criteria
 <summary>
 <b>Product Requirements</b>
 </summary>
-<br />
 <!-- necessary demands -->
 
 ### URL Bar Form
@@ -246,7 +238,6 @@ Success Criteria
 <summary>
 <i>My Process & Game Plan</i>
 </summary>
-<br />
 
 ### General Priority
 
@@ -310,7 +301,6 @@ Success Criteria
 <summary>
 <i>Future Enhancements & Technical Improvements</i>
 </summary>
-<br />
 
 ### Future Enhancements
 
@@ -345,9 +335,8 @@ Success Criteria
 
 </details>
 
-<br /> <!--  -->
-
 <!-- ## View Demos -->
+<hr />
 
 ## Tools & Technologies
 
@@ -360,25 +349,25 @@ Success Criteria
 <img alt="Vite" src="https://img.shields.io/badge/Vite-B73BFE?logoColor=FFD62E&style=for-the-badge&logo=vite" />
 </a>
 <a target="_blank" href="https://www.typescriptlang.org/">
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logoColor=FFFFFF&style=for-the-badge&logo=typescript" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logoColor=FFF&style=for-the-badge&logo=typescript" />
 </a>
 <a target="_blank" href="https://reactjs.org/">
 <img alt="React" src="https://img.shields.io/badge/React-00D8FF?logoColor=20232A&style=for-the-badge&logo=react" />
 </a>
 <a target="_blank" href="https://ui.mantine.dev/">
-<img alt="Mantine UI" src="https://img.shields.io/badge/Mantine_UI-339AF0?logoColor=FFFFFF&style=for-the-badge&logo=addthis" />
+<img alt="Mantine UI" src="https://img.shields.io/badge/Mantine_UI-339AF0?logoColor=FFF&style=for-the-badge&logo=addthis" />
 </a>
 <a target="_blank" href="https://react-query.tanstack.com/">
 <img alt="React Query" src="https://img.shields.io/badge/React_Query-FF4154?logoColor=FFD94C&style=for-the-badge&logo=react-query" />
 </a>
 <a target="_blank" href="https://react-hook-form.com/">
-<img alt="React Hook Form" src="https://img.shields.io/badge/React_Hook_Form-EC5990?logoColor=FFFFFF&style=for-the-badge&logo=react-hook-form" />
+<img alt="React Hook Form" src="https://img.shields.io/badge/React_Hook_Form-EC5990?logoColor=FFF&style=for-the-badge&logo=react-hook-form" />
 </a>
 <a target="_blank" href="https://reactrouter.com/">
-<img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?logoColor=FFFFFF&style=for-the-badge&logo=react-router" />
+<img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?logoColor=FFF&style=for-the-badge&logo=react-router" />
 </a>
 <a target="_blank" href="https://zustand-demo.pmnd.rs/">
-<img alt="Zustand" src="https://img.shields.io/badge/Zustand-716257?logoColor=FFFFFF&style=for-the-badge&logo=addthis" />
+<img alt="Zustand" src="https://img.shields.io/badge/Zustand-443E38?logoColor=FFF&style=for-the-badge&logo=addthis" />
 </a>
 </td>
 </tr>
@@ -388,38 +377,41 @@ Success Criteria
 <!-- Ky, Zod, DnD-Kit, CodeMirror, JSON-Server, React Hot Toast, React Error Boundary, tabler/icons, iconify/react -->
 <td>
 <a target="_blank" href="https://npmjs.com/package/ky">
-<img alt="Ky" src="https://img.shields.io/badge/Ky-F1423D?logoColor=FFFFFF&logo=addthis" />
+<img alt="Ky" src="https://img.shields.io/badge/Ky-F1423D?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://zod.dev/">
-<img alt="Zod" src="https://img.shields.io/badge/Zod-3068B7?logoColor=FFFFFF&logo=addthis" />
+<img alt="Zod" src="https://img.shields.io/badge/Zod-3068B7?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://dndkit.com/">
-<img alt="DnD-Kit" src="https://img.shields.io/badge/DnD--Kit-000000?logoColor=FFFFFF&logo=addthis" />
+<img alt="DnD-Kit" src="https://img.shields.io/badge/DnD--Kit-000?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://codemirror.net/">
-<img alt="CodeMirror" src="https://img.shields.io/badge/CodeMirror-FFFFFF?logoColor=000000&logo=codemirror" />
+<img alt="CodeMirror" src="https://img.shields.io/badge/CodeMirror-FFF?logoColor=000&logo=codemirror" />
 </a>
 <a target="_blank" href="https://npmjs.com/package/json-server">
-<img alt="JSON Server" src="https://img.shields.io/badge/JSON--Server-1E3A8A?logoColor=FFFFFF&logo=json" />
+<img alt="JSON Server" src="https://img.shields.io/badge/JSON--Server-1E3A8A?logoColor=FFF&logo=json" />
 </a>
 <a target="_blank" href="https://react-hot-toast.com/">
-<img alt="React Hot Toast" src="https://img.shields.io/badge/React_Hot_Toast-E15549?logoColor=FFFFFF&logo=addthis" />
+<img alt="React Hot Toast" src="https://img.shields.io/badge/React_Hot_Toast-E15549?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://npmjs.com/package/react-error-boundary">
-<img alt="React Error Boundary" src="https://img.shields.io/badge/React_Error_Boundary-230000?logoColor=FFFFFF&logo=npm" />
+<img alt="React Error Boundary" src="https://img.shields.io/badge/React_Error_Boundary-230000?logoColor=CB3837&logo=npm" />
 </a>
 <a target="_blank" href="https://tablericons.com/">
-<img alt="Tabler Icons" src="https://img.shields.io/badge/Tabler_Icons-2D89EF?logoColor=FFFFFF&logo=addthis" />
+<img alt="Tabler Icons" src="https://img.shields.io/badge/Tabler_Icons-2D89EF?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://iconify.design/">
-<img alt="Iconify" src="https://img.shields.io/badge/Iconify-1769AA?logoColor=FFFFFF&logo=iconify" />
+<img alt="Iconify" src="https://img.shields.io/badge/Iconify-1769AA?logoColor=FFF&logo=iconify" />
 </a>
 </td>
 </tr>
 
 <tr>
 <td><b>Environment</b></td>
-<!-- EditorConfig, ESLint, Prettier, Husky, Lint-Staged, Commitizen, Commitlint -->
+<!--
+EditorConfig, ESLint, Prettier, Husky, Lint-Staged,
+Commitizen, Commitlint, Lighthouse, GitHub Actions
+-->
 <td>
 <a target="_blank" href="https://editorconfig.org/">
 <img alt="EditorConfig" src="https://img.shields.io/badge/EditorConfig-E0EFEF?logoColor=000&logo=editorconfig" />
@@ -434,13 +426,14 @@ Success Criteria
 <img alt="Husky" src="https://img.shields.io/badge/Husky-607D8B?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://npmjs.com/package/lint-staged">
-<img alt="Lint-Staged" src="https://img.shields.io/badge/Lint--Staged-230000?logoColor=FFFFFF&logo=npm" />
+<img alt="Lint-Staged" src="https://img.shields.io/badge/Lint--Staged-230000?logoColor=CB3837&logo=npm" />
 </a>
+
 <a target="_blank" href="https://commitizen-tools.github.io/commitizen/">
-<img alt="Commitizen" src="https://img.shields.io/badge/Commitizen-121212?logoColor=FFFFFF&logo=addthis" />
+<img alt="Commitizen" src="https://img.shields.io/badge/Commitizen-121212?logoColor=FFF&logo=addthis" />
 </a>
 <a target="_blank" href="https://commitlint.js.org/#/">
-<img alt="Commitlint" src="https://img.shields.io/badge/Commitlint-121212?logoColor=FFFFFF&logo=commitlint" />
+<img alt="Commitlint" src="https://img.shields.io/badge/Commitlint-121212?logoColor=FFF&logo=commitlint" />
 </a>
 <a target="_blank" href="https://web.dev/measure/">
 <img alt="Lighthouse" src="https://img.shields.io/badge/Lighthouse-F44B21?logoColor=FFF&logo=lighthouse" />
@@ -453,7 +446,7 @@ Success Criteria
 
 <tr>
 <td><b>Utilities</b></td>
-<!-- VS Code, Git, GitHub, GitHub Actions, Figma Jam, Netlify -->
+<!-- VS Code, Git, GitHub, PNPM, Figma Jam, Netlify -->
 <td>
 <a target="_blank" href="https://code.visualstudio.com/">
 <img alt="VS Code" src="https://img.shields.io/badge/VS_Code-0078D4?logoColor=FFF&logo=visual-studio-code" />
@@ -462,7 +455,10 @@ Success Criteria
 <img alt="Git" src="https://img.shields.io/badge/Git-F05033?logoColor=FFF&logo=git" />
 </a>
 <a target="_blank" href="https://github.com/">
-<img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?logoColor=FFF&logo=github" />
+<img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?logoColor=FFF&logo=github" />
+</a>
+<a target="_blank" href="https://pnpm.io/">
+<img alt="PNPM" src="https://img.shields.io/badge/PNPM-F69220?logoColor=FFF&logo=pnpm" />
 </a>
 <a target="_blank" href="https://figma.com/figjam/">
 <img alt="Figma Jam" src="https://img.shields.io/badge/Figma_Jam-F24E1E?logoColor=FFF&logo=figma" />
@@ -473,3 +469,10 @@ Success Criteria
 </td>
 </tr>
 </table>
+
+<!--
+MD RESOURCE
+- https://shields.io
+- https://simpleicons.org/
+- default badge :: 230000 | ?logoColor=FFF/000/CB3837CB3837&logo=npm/addthis
+-->
