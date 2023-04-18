@@ -8,16 +8,16 @@
 	<a
 	target="_blank"
 	title="Open web app 🔗"
-	href="https://rata-call-app.netlify.app/"
+	href="https://rata-call-web.netlify.app/"
 	><img
 		alt="build-status"
-		src="https://img.shields.io/website-live-issue-sucess-important/https/rata-call-app.netlify.app/"
+		src="https://img.shields.io/website-live-issue-sucess-important/https/rata-call-web.netlify.app/"
 		/>
 	</a>
 	<a
 	target="_blank"
 	title="Open deploy status 🔗"
-	href="https://app.netlify.com/sites/rata-call-app/deploys"
+	href="https://app.netlify.com/sites/rata-call-web/deploys"
 	><img
 		alt="netlify-build-status"
 		src="https://api.netlify.com/api/v1/badges/9bb7901f-5203-45a0-a9bd-48f520991937/deploy-status"

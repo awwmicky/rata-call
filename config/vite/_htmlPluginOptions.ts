@@ -2,9 +2,9 @@ const content = {
 	title: 'RATA Call | Productivity App',
 	description: 'Make a call, record the data, and simplify the process of developing RESTful APIs',
 	keywords: 'vite, typescript, react, mantine ui, react query, react hook form, react router, zustand',
-	author: 'michael f alvarez, m-f-alvarez@outlook.com, 650-260-8682',
-	link: 'https://rata-call-app.netlify.app/',
-	link_name: 'rata-call-app.netlify.app',
+	// author: 'michael f alvarez, m-f-alvarez@outlook.com, 650-260-8682',
+	link: 'https://rata-call-web.netlify.app/',
+	link_name: 'rata-call-web',
 	thumbnail: '/thumbnail.png',
 	img_alt: '🎈',
 }
@@ -13,7 +13,7 @@ const headContent = [
 	{	name: 'title', content: content.title },
 	{ name: 'description', content: content.description },
 	{ name: 'keywords', content: content.keywords },
-	{ name: 'author',  content: content.author },
+	// { name: 'author',  content: content.author },
 ]
 
 const ogContent = [
